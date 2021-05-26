@@ -1,0 +1,22 @@
+h1, h2, h3, p{
+  font-family: $paragraph-font;
+}
+
+body{
+  background-color: $page-background-color;
+}
+
+.wrapper{
+  display: inline-flex;
+  width: 100%;
+}
+
+.sidebar{
+  max-width: 223px;
+  margin-right: 22px;
+  transform: translateY(-98px);
+}
+
+.general-statistic{
+  flex: 0 0 82.45%;
+}

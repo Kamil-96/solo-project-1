@@ -5,9 +5,12 @@
 
 /* Components */
 @import "components/form_field";
+@import "components/sidebar";
+@import "components/top_bar";
 
 /* Sections */
 @import "sections/registration_form";
+@import "sections/general_statistic";
 
 /* Pages / Views */
 @import "pages/registration";
