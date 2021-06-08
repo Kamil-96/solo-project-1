@@ -1,47 +1,126 @@
 .sidebar{
   padding: 0;
+  height: 100vh;
+  background-color: $sidebar-color;
   
   .container{
     margin: 0;
-    background-color: $sidebar-color;
+    padding: 0;
   }
 }
 
-.page-logo{
-  font-family: $brand-font;
-  color: $brand-main-color;
-  padding: 20px 0 0 6px;
-  font-size: 28px;
-  margin-bottom: 0;
+.logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  
+  .page-logo{
+    font-family: $brand-font;
+    color: $brand-main-color;
+    padding: 20px 0 0 22px;
+    font-size: 28px;
+    margin-bottom: 0;
+    flex: 3;
+    margin-top: 25px;
+  }
+
+  i {
+    color: $paragraph-color;
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 22px;
+
+    &:hover {
+      color: $brand-main-color;
+    }
+  }
 }
 
 .sidebar-list {
   list-style-type: none;
-  margin-top: 18px;
+  margin-top: 16px;
+  padding-left: 0;
 
   li {
-    padding: 15px 0;
+    padding: 16px 0 13px;
+    padding-left: 23px;
     
     a {
       text-decoration: none;
       color: $paragraph-color;
       font-family: $paragraph-font;
+
+      img {
+        height: 16px;
+        width: 16px;
+        filter: invert(50%);
+        margin-right: 15px;
+        transform: translateY(3px);
+      }
+
+      .star {
+        height: 22px;
+        width: 22px;
+        transform: translate(-3px, 5px);
+        margin-right: 10px;
+      }
+
+      .postback {
+        transform: translateY(1px);
+      }
     }
-  }  
+
+    &:hover {
+      background-color: $sidebar-hover-color;
+      cursor: pointer;
+
+      a {
+        color: $brand-main-color;
+      }
+
+      img {
+        filter: invert(1);
+      }
+    }
+  }
+
+  li::before {
+    content: '';
+    width: 5px;
+    height: 10px;
+    background: $button-color;
+  }
+  
+  .special {
+    padding-top: 10px;
+  }
 }
 
 .manager-contact {
-  padding-bottom: 800px;
-  margin-top: 63px;
+  margin-top: 67px;
   
   h2 {
-    font-family: $paragraph-font;
     font-size: 17px;
     letter-spacing: 0;
+    margin-left: 20px;
+    color: $paragraph-color;
   }
   
-  p {
+  a {
+    display: flex;
+    margin: 18px 0px 0 23px;
     margin-top: 35px;
-    padding-left: 71px;
+    text-decoration: none;
+    color: $paragraph-color;
+
+    img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+
+    p {
+      margin-left: 13px;
+    }
   }
 }

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Just do it</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,37 +16,40 @@
   <body>
     <nav class="navigation">
       <div class="nav-amount">
-        <img src="images/wallet.svg">         
+        <img src="images/wallet.svg" alt="">
         <span>$1,500.00</span>
-        <img class="arrow-down" src="images/arrow-down.svg">
+        <img class="arrow-down" src="images/arrow-down.svg" alt="">
       </div>
       <div class="nav-notification">
-        <img src="images/notification.svg">
+        <img src="images/notification.svg" alt="">
       </div>
       <div class="nav-user">
-        <img src="images/profile.svg">
+        <img src="images/profile.svg" alt="">
         <p>Leonardo Dicaprio</p>
       </div>
       <div class="nav-logout">
-        <img src="images/quit.svg">
+        <img src="images/quit.svg" alt="">
       </div>
     </nav>
     <main class="wrapper">
       <aside class="sidebar col-md-2">
         <div class="container">
-          <h2 class="page-logo">Just do it</h2>
+          <div class="logo-wrapper">  
+            <h2 class="page-logo">Just do it</h2>
+            <i class="fas fa-bars"></i>
+          </div>  
           <ul class="sidebar-list">
-            <li><a href="#"><i></i>General</a></li>
-            <li><a href="#"><i></i>Details</a></li>
-            <li><a href="#"><i></i>Links</a></li>
-            <li><a href="#"><i></i>Banners</a></li>
-            <li><a href="#"><i></i>Personal data</a></li>
-            <li><a href="#"><i></i>Payout</a></li>
-            <li><a href="#"><i></i>Postback</a></li>
+            <li class="special"><a href="#"><img class="star" src="images/general.svg" alt="">General</a></li>
+            <li><a href="#"><img src="images/details.svg" alt="">Details</a></li>
+            <li class="special"><a href="#"><img class="star" src="images/links.svg" alt="">Links</a></li>
+            <li><a href="#"><img src="images/banners.svg" alt="">Banners</a></li>
+            <li><a href="#"><img src="images/personaldata.svg" alt="">Personal data</a></li>
+            <li><a href="#"><img src="images/payout.svg" alt="">Payout</a></li>
+            <li><a href="#"><img class="postback" src="images/postback.svg" alt="">Postback</a></li>
           </ul>
           <div class="manager-contact">
             <h2>YOUR MANAGER</h2>
-            <p><i></i>Mikhael E</p>
+            <a href="#"><img src=images/manager.png alt=""><p>Mikhael E</p></a>
           </div>
         </div>
       </aside>
