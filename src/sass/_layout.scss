@@ -5,8 +5,8 @@ h1, h2, h3, p{
 .section-title {
   color: $section-title-color;
   font-size: 19px;
-  border-bottom: 1px solid #889292;
-  padding: 0 0 15px 20px;
+  border-bottom: 1px solid $border-color;
+  padding: 17px 0 15px 20px;
   margin-top: 16px;
 }
 

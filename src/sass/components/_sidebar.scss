@@ -120,6 +120,10 @@
 
     p {
       margin-left: 13px;
+
+      &:hover {
+        color: $sidebar-hover-color;
+      }
     }
   }
 }
