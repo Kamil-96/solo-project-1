@@ -1,10 +1,12 @@
 .content-wrapper {
   padding-left: 0;
+  margin-left: 245px;
+  margin-top: 77px;
 
   .general-statistic {
     background-color: $brand-main-color;
     margin-top: 21px;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
     padding: 0 0 15px 0;
     
 
@@ -118,5 +120,71 @@
 
   .general-links {
     background-color: $brand-main-color;
+
+    .list-of-links {
+      margin: 0 auto;
+      width: 65%;
+
+      table {
+        height: 690px;
+        width: 100%;
+        border-spacing: 0;
+        border-top: 1px solid $border-color;
+
+        tr {  
+          td {
+            border-bottom: 1px solid $border-color;
+            
+            a {
+              text-decoration: none;
+              color: $link-color;
+              font-size: 19px;
+              letter-spacing: 0.9px;
+
+              &:hover {
+                color: $button-color;
+              }
+            }
+            
+            img {
+              height: 20px;
+              width: 20px;
+              cursor: pointer;
+              padding-top: 7px;
+              filter: invert(50%);
+              
+              &:hover {
+                filter: invert(48%) sepia(91%) saturate(1428%) hue-rotate(358deg) brightness(98%) contrast(109%);
+              }
+            }
+
+            img:last-of-type {
+              height: 25px;
+            }
+          }
+
+          td:first-child{
+            padding-left: 16px;
+            font-size: 19px;
+            padding-top: 0px;
+            width: 46%;
+            font-family: $paragraph-font;
+            color: $paragraph-color;
+          }
+
+          td:nth-child(2) {
+            width: 42%;
+          }
+
+          &:hover {
+            background-color: $page-background-color;
+          }
+        }  
+      }
+    }
+
+    .second-button {
+      height: 70px;
+    }
   }
 }

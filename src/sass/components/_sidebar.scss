@@ -21,7 +21,7 @@
     font-size: 28px;
     margin-bottom: 0;
     flex: 3;
-    margin-top: 25px;
+    margin-top: 5px;
   }
 
   i {
@@ -40,7 +40,7 @@
   list-style-type: none;
   margin-top: 16px;
   padding-left: 0;
-
+  
   li {
     padding: 16px 0 13px;
     padding-left: 23px;
@@ -82,15 +82,12 @@
         filter: invert(1);
       }
     }
+
+    &:hover {
+      border-left: 4px solid #ff7b00;
+    }
   }
 
-  li::before {
-    content: '';
-    width: 5px;
-    height: 10px;
-    background: $button-color;
-  }
-  
   .special {
     padding-top: 10px;
   }
@@ -122,7 +119,7 @@
       margin-left: 13px;
 
       &:hover {
-        color: $sidebar-hover-color;
+        color: $button-color;
       }
     }
   }

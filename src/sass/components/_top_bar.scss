@@ -4,23 +4,33 @@
   justify-content: flex-end;
   background-color: $brand-main-color;
   margin: 0;
-  border-bottom: 2px solid $paragraph-color;
+  border-bottom: 2px solid $border-color;
   height: 77px;
+  z-index: 2;
+  position: fixed;
   
-  .nav-amount {
-    border-left: 1px solid $paragraph-color;
-    border-right: 1px solid $paragraph-color;
+  .nav-amount, .nav-notification, .nav-user, .nav-logout {
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
     display: flex;
     align-items: center;
-    padding: 0 1px 0 21px;
-
-    &:hover {
-      cursor: pointer;
-    }
 
     img {
       height: 22px;
       width: 22px;
+      filter: invert(50%);
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: $page-background-color;
+    }
+  }
+  
+  .nav-amount {
+    padding: 0 1px 0 21px;
+
+    img {
       margin-right: 18px;
     }
 
@@ -40,37 +50,14 @@
   }
 
   .nav-notification {
-    border-left: 1px solid $paragraph-color;
-    border-right: 1px solid $paragraph-color;
-    align-items: center;
-    display: flex;
     padding: 0 23px 0 23px;
-
-    &:hover {
-      cursor: pointer;
-    }
-    
-    img {
-      height: 22px;
-      width: 22px;
-    }
   }
 
   .nav-user {
-    border-left: 1px solid $paragraph-color;
-    border-right: 1px solid $paragraph-color;
-    align-items: center;
-    display: flex;
     padding: 0 22px 0 21px;
 
-    &:hover {
-      cursor: pointer;
-    }
-    
     img {
       margin: 4px 16px 0 0;
-      height: 22px;
-      width: 22px;
     }
 
     p {
@@ -81,27 +68,12 @@
   }
 
   .nav-logout {
-    border-left: 1px solid $paragraph-color;
-    border-right: 1px solid $paragraph-color;
-    align-items: center;
-    display: flex;
-
-    &:hover {
-      cursor: pointer;
-    }
-    
     img {
-      height: 22px;
-      width: 22px;
       margin: 0 23px 0 25px;
     }
   }
 
   span, p {
     color: $paragraph-color;
-  }
-
-  img {
-    filter: invert(50%);
   }
 }

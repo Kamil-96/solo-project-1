@@ -22,9 +22,11 @@ body{
 .sidebar{
   max-width: 223px;
   margin-right: 22px;
-  transform: translateY(-98px);
+  position: fixed;
+  z-index: 3;
 }
 
 .general-statistic{
   flex: 0 0 82.45%;
+  z-index: 1;
 }
