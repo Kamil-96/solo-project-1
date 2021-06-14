@@ -1,12 +1,14 @@
 .content-wrapper {
-  padding-left: 0;
-  margin-left: 245px;
-  margin-top: 77px;
+  margin-left: 112px;
+  margin-top: 0px;
+  padding-top: 95px;
 
   .general-statistic {
     background-color: $brand-main-color;
-    margin-top: 21px;
+    margin-top: 0;
     margin-bottom: 27px;
+    margin-left: 132px;
+    margin-right: 22px;
     padding: 0 0 15px 0;
     
 
@@ -120,6 +122,8 @@
 
   .general-links {
     background-color: $brand-main-color;
+    margin-left: 132px;
+    margin-right: 22px;
 
     .list-of-links {
       margin: 0 auto;

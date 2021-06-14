@@ -14,25 +14,8 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <nav class="navigation">
-      <div class="nav-amount">
-        <img src="images/wallet.svg" alt="">
-        <span>$1,500.00</span>
-        <img class="arrow-down" src="images/arrow-down.svg" alt="">
-      </div>
-      <div class="nav-notification">
-        <img src="images/notification.svg" alt="">
-      </div>
-      <div class="nav-user">
-        <img src="images/profile.svg" alt="">
-        <p>Leonardo Dicaprio</p>
-      </div>
-      <div class="nav-logout">
-        <img src="images/quit.svg" alt="">
-      </div>
-    </nav>
-    <main class="wrapper">
-      <aside class="sidebar col-md-2">
+    <div class="page-wrapper">
+      <div class="sidebar">
         <div class="container">
           <div class="logo-wrapper">
             <h2 class="page-logo">Just do it</h2>
@@ -52,125 +35,144 @@
             <a href="#"><img src="images/manager.png" alt=""><p>Mikhael E.</p></a>
           </div>
         </div>
-      </aside>
-      <div class="content-wrapper col-md-10">
-        <section class="general-statistic">
-          <h2 class="section-title">GENERAL STATISTIC</h2>
-          <div class="calendar-container">
-            <div class="calendar-wrapper">
-              <p>16.05.2016</p>
-              <p>16.05.2016</p>
-              <img src="images/calendar.svg" alt="">
-            </div>
-            <a href="#"><img src="images/refresh.svg" alt="refresh"></a>
-          </div>
-          <div class="table-wrapper">
-            <table class="table-1">
-              <tbody>
-                <tr>
-                  <td>Visit Signups</td>
-                  <td class="right-column">124</td>
-                </tr>
-                <tr>
-                  <td>FTD</td>
-                  <td class="right-column">445</td>
-                </tr>
-              </tbody>
-            </table>
-            <table class="table-2">
-              <tbody>
-                <tr>
-                  <td>Net deposit</td>
-                  <td class="right-column">564</td>
-                </tr>
-                <tr>
-                  <td>Turn over</td>
-                  <td class="right-column">432</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="chart-wrapper">
-            <h3>Earnings chart</h3>
-            <img src="images/earnigs-chart.png" alt="">
-          </div>
-        </section>
-        <section class="general-links">
-          <h2 class="section-title">Links</h2>
-          <div class="button-wrapper">
-            <a class="button-add" href="#">+ add new</a>
-          </div>
-          <div class="list-of-links">
-            <table>
-              <tbody>
-                <tr>
-                  <td>Home page</td>
-                  <td><a href="#">http://www.homepage.com</a></td>
-                  <td><img src="images/links.svg" alt=""></td>
-                  <td><img src="images/trash.svg" alt=""></td>
-                </tr>
-                <tr>
-                  <td>Currently offer</td>
-                  <td><a href="#">http://www.currently.com</a></td>
-                  <td><img src="images/links.svg" alt=""></td>
-                  <td><img src="images/trash.svg" alt=""></td>
-                </tr>
-                <tr>
-                  <td>Blurpix</td>
-                  <td><a href="#">http://www.blurpix.com</a></td>
-                  <td><img src="images/links.svg" alt=""></td>
-                  <td><img src="images/trash.svg" alt=""></td>
-                </tr>
-                <tr>
-                  <td>Your site</td>
-                  <td><a href="#">http://www.yoursite.com</a></td>
-                  <td><img src="images/links.svg" alt=""></td>
-                  <td><img src="images/trash.svg" alt=""></td>
-                </tr>
-                <tr>
-                  <td>Google</td>
-                  <td><a href="#">http://www.google.com</a></td>
-                  <td><img src="images/links.svg" alt=""></td>
-                  <td><img src="images/trash.svg" alt=""></td>
-                </tr>
-                <tr>
-                  <td>Facebook</td>
-                  <td><a href="#">http://www.facebook.com</a></td>
-                  <td><img src="images/links.svg" alt=""></td>
-                  <td><img src="images/trash.svg" alt=""></td>
-                </tr>
-                <tr>
-                  <td>Dashboard</td>
-                  <td><a href="#">http://www.dashboard.com</a></td>
-                  <td><img src="images/links.svg" alt=""></td>
-                  <td><img src="images/trash.svg" alt=""></td>
-                </tr>
-                <tr>
-                  <td>Blurax</td>
-                  <td><a href="#">http://www.blurax.com</a></td>
-                  <td><img src="images/links.svg" alt=""></td>
-                  <td><img src="images/trash.svg" alt=""></td>
-                </tr>
-                <tr>
-                  <td>Piece of wine</td>
-                  <td><a href="#">http://www.pieceofwine.com</a></td>
-                  <td><img src="images/links.svg" alt=""></td>
-                  <td><img src="images/trash.svg" alt=""></td>
-                </tr>
-                <tr>
-                  <td>Twitter</td>
-                  <td><a href="#">http://www.twitter.com</a></td>
-                  <td><img src="images/links.svg" alt=""></td>
-                  <td><img src="images/trash.svg" alt=""></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="button-wrapper second-button">
-            <a class="button-add" href="#">+ add new</a>
-          </div>
-        </section>
       </div>
-    </main>
+      <div class="nav-cont-wrapper">
+        <nav class="navigation">
+          <div class="nav-amount">
+            <img src="images/wallet.svg" alt="">
+            <span>$1,500.00</span>
+            <img class="arrow-down" src="images/arrow-down.svg" alt="">
+          </div>
+          <div class="nav-notification">
+            <img src="images/notification.svg" alt="">
+          </div>
+          <div class="nav-user">
+            <img src="images/profile.svg" alt="">
+            <p>Leonardo Dicaprio</p>
+          </div>
+          <div class="nav-logout">
+            <img src="images/quit.svg" alt="">
+          </div>
+        </nav>
+        <div class="content-wrapper">
+          <section class="general-statistic">
+            <h2 class="section-title">GENERAL STATISTIC</h2>
+            <div class="calendar-container">
+              <div class="calendar-wrapper">
+                <p>16.05.2016</p>
+                <p>16.05.2016</p>
+                <img src="images/calendar.svg" alt="">
+              </div>
+              <a href="#"><img src="images/refresh.svg" alt="refresh"></a>
+            </div>
+            <div class="table-wrapper">
+              <table class="table-1">
+                <tbody>
+                  <tr>
+                    <td>Visit Signups</td>
+                    <td class="right-column">124</td>
+                  </tr>
+                  <tr>
+                    <td>FTD</td>
+                    <td class="right-column">445</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table-2">
+                <tbody>
+                  <tr>
+                    <td>Net deposit</td>
+                    <td class="right-column">564</td>
+                  </tr>
+                  <tr>
+                    <td>Turn over</td>
+                    <td class="right-column">432</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="chart-wrapper">
+              <h3>Earnings chart</h3>
+              <img src="images/earnigs-chart.png" alt="">
+            </div>
+          </section>
+          <section class="general-links">
+            <h2 class="section-title">Links</h2>
+            <div class="button-wrapper">
+              <a class="button-add" href="#">+ add new</a>
+            </div>
+            <div class="list-of-links">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Home page</td>
+                    <td><a href="#">http://www.homepage.com</a></td>
+                    <td><img src="images/links.svg" alt=""></td>
+                    <td><img src="images/trash.svg" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td>Currently offer</td>
+                    <td><a href="#">http://www.currently.com</a></td>
+                    <td><img src="images/links.svg" alt=""></td>
+                    <td><img src="images/trash.svg" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td>Blurpix</td>
+                    <td><a href="#">http://www.blurpix.com</a></td>
+                    <td><img src="images/links.svg" alt=""></td>
+                    <td><img src="images/trash.svg" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td>Your site</td>
+                    <td><a href="#">http://www.yoursite.com</a></td>
+                    <td><img src="images/links.svg" alt=""></td>
+                    <td><img src="images/trash.svg" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td>Google</td>
+                    <td><a href="#">http://www.google.com</a></td>
+                    <td><img src="images/links.svg" alt=""></td>
+                    <td><img src="images/trash.svg" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td>Facebook</td>
+                    <td><a href="#">http://www.facebook.com</a></td>
+                    <td><img src="images/links.svg" alt=""></td>
+                    <td><img src="images/trash.svg" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td>Dashboard</td>
+                    <td><a href="#">http://www.dashboard.com</a></td>
+                    <td><img src="images/links.svg" alt=""></td>
+                    <td><img src="images/trash.svg" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td>Blurax</td>
+                    <td><a href="#">http://www.blurax.com</a></td>
+                    <td><img src="images/links.svg" alt=""></td>
+                    <td><img src="images/trash.svg" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td>Piece of wine</td>
+                    <td><a href="#">http://www.pieceofwine.com</a></td>
+                    <td><img src="images/links.svg" alt=""></td>
+                    <td><img src="images/trash.svg" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td>Twitter</td>
+                    <td><a href="#">http://www.twitter.com</a></td>
+                    <td><img src="images/links.svg" alt=""></td>
+                    <td><img src="images/trash.svg" alt=""></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="button-wrapper second-button">
+              <a class="button-add" href="#">+ add new</a>
+            </div>
+          </section>
+        </div>
+      </div>  
+    </div>
   </body>
 </html>

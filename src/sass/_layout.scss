@@ -7,7 +7,7 @@ h1, h2, h3, p{
   font-size: 19px;
   border-bottom: 1px solid $border-color;
   padding: 17px 0 15px 20px;
-  margin-top: 16px;
+  margin-top: 3px;
 }
 
 body{
@@ -20,13 +20,26 @@ body{
 }
 
 .sidebar{
-  max-width: 223px;
-  margin-right: 22px;
+  width: 223px;
+  margin-right: 0;
   position: fixed;
   z-index: 3;
 }
 
 .general-statistic{
-  flex: 0 0 82.45%;
   z-index: 1;
 }
+
+/*@media (max-width: 767px) {
+  .wrapper {
+    display: block;
+
+    .sidebar {
+      width: 100%;
+    }
+
+    .content-wrapper {
+      width: 100%;
+    }
+  }  
+}*/
