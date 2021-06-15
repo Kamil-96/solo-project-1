@@ -18,7 +18,7 @@
       align-items: center;
       max-height: 300px;
       max-width: 450px;
-      margin: 40px 0 43px 408px;
+      margin: 40px auto 43px auto;
       
       .calendar-wrapper {
         max-width: 400px;
@@ -104,18 +104,20 @@
     }
 
     .chart-wrapper {
-      width: 70%;
-      margin-left: 16%;
+      margin: 0 auto;
       padding-top: 57px;
+      text-align: center;
 
       h3 {
         color: $paragraph-color;
         margin-bottom: 25px;
-        margin-left: 15px;
+        text-align: left;
+        margin-left: 17%;
       }
 
       img {
-        max-width: 850px;
+        max-width: 100%;
+        max-height: 100%;
       }
     }
   }
@@ -127,7 +129,7 @@
 
     .list-of-links {
       margin: 0 auto;
-      width: 65%;
+      //width: 65%;
 
       table {
         height: 690px;

@@ -24,22 +24,148 @@ body{
   margin-right: 0;
   position: fixed;
   z-index: 3;
+
+  &.hidden {
+    max-height: 75px;
+
+    .sidebar-list, .manager-contact {
+      display: none;
+    }
+  }
 }
 
 .general-statistic{
   z-index: 1;
 }
 
-/*@media (max-width: 767px) {
-  .wrapper {
-    display: block;
-
+@media (max-width: 790px) {
+  .page-wrapper {
     .sidebar {
       width: 100%;
+      position: static;
+      text-align: center;
+
+      .container {
+        width: 100%;
+        max-width: 100%;
+        
+        .logo-wrapper {
+          justify-content: center;
+
+          h2 {
+            max-width: 170px;
+          }
+        }
+        
+        .manager-contact {
+          margin-top: 0;
+          
+          a {
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    .nav-cont-wrapper {
+      .navigation {
+        position: static;
+        justify-content: center;
+      }
+
+      .content-wrapper {
+        margin-left: 0;
+        padding-top: 15px;
+        
+        .general-statistic {
+          margin-left: 10px;
+
+          .chart-wrapper {
+            h3 {
+              text-align: center;
+              margin-left: 0;
+            }
+          }
+        }
+
+        .general-links {
+          margin-left: 10px;
+
+          .list-of-links {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .nav-cont-wrapper {
+    .navigation {
+      .nav-amount {
+        padding: 0;
+
+        img, span {
+          margin-right: 3px;
+        }
+
+        .arrow-down {
+          margin-right: 5px;
+        }
+      }
+
+      .nav-notification {
+        padding: 0 5px;
+      }
+
+      .nav-user {
+        padding: 0 5px;
+        
+        img {
+          margin-right: 3px;
+        }
+      }
+
+      .nav-logout {
+        img {
+          margin: 0 5px;
+        }
+      }
     }
 
     .content-wrapper {
-      width: 100%;
+      .general-statistic {
+        .calendar-container {
+          .calendar-wrapper {
+            margin-right: 3px;
+          }
+        }
+        
+        .table-wrapper {
+          flex-direction: column;
+          height: 200px;
+
+          .table-1 {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .general-links {
+        .list-of-links {
+          td {
+            a {
+              font-size: 12px;
+            }
+          }
+
+          td:first-child {
+            padding-left: 0px;
+            font-size: 12px;
+          }
+        }
+      }
     }
-  }  
-}*/
+  }
+}
